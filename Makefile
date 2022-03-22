@@ -7,4 +7,6 @@ lint:
 	@echo 'Formatting source code ...'
 	@npx prettier --write --list-different ./pages/* ./assets/styled/* ./components/*
 dev: lint run
+push: 
+	@git push origin --force-with-lease main
 
